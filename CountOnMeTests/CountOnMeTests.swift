@@ -70,7 +70,7 @@ class CountOnMeTests: XCTestCase {
 	func testTappedNumberButton() {
 		sut.tappedNumberButton(numberText: "7")
 
-		XCTAssertTrue(sut.expression == "7")
+		XCTAssertEqual(sut.expression, "7")
 	}
 
 	func testTappedDivisionButton() {
