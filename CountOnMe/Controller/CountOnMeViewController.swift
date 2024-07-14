@@ -64,6 +64,7 @@ extension CountOnMeViewController: ComputationModelDelegate {
 	func didUpdateExpression(value: String) {
 		self.textView.text = value
 	}
+	
 	func didDetectError(_ error: AlertError) {
 		let alertVC = UIAlertController(title: error.title, message: error.message, preferredStyle: .alert)
 		alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
